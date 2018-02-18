@@ -10,13 +10,13 @@ lint:
 	flake8 hello_world test test_xunit
 
 test:
-	PYTHONPATH=. py.test  --verbose -s
+	PYTHONPATH=. py.test --verbose -s
 
 test_cov:
 	PYTHONPATH=. py.test --verbose -s --cov=.
 
 test_xunit:
-	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml
+	PYTHONPATH=. py.test --verbose -s --cov=. --junit-xml=test_results.xml
 
 test_smoke:
 	curl -I --fail 127.0.0.1:5000
