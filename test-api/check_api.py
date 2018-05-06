@@ -13,6 +13,7 @@ def main():
     if r.status_code != 200:
         print("FAILED: wywolanie nie powiodlo sie: " + r.text)
         exit(2)
+    print(r.text)
     print(r.json())
     checkOutput(r.json())
 
