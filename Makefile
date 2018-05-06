@@ -25,7 +25,7 @@ test-api:
 	python test-api/check_api.py
 
 test_ui:
-	PYTHONPATH=. py.test test_ui/test_ui.py
+	PYTHONPATH=. py.test -s --verbose test_ui/test_ui.py
 
 run:
 	python main.py

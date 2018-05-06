@@ -9,7 +9,7 @@ class TestFormater(unittest.TestCase):
         driver = webdriver.Chrome()
         driver.get("http://127.0.0.1:5000/ui")
         self.poprawny(driver)
-        time.sleep(5)
+        #time.sleep(5)
         driver.quit()
 
     def poprawny(self, driver):
