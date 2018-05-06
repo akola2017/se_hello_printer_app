@@ -9,10 +9,14 @@ class TestFormater(unittest.TestCase):
         driver = webdriver.Chrome()
         driver.get("http://127.0.0.1:5000/ui")
         self.poprawny(driver)
-        #time.sleep(5)
+        time.sleep(5)
         driver.quit()
 
     def poprawny(self, driver):
         wyswietla = driver.find_element_by_id('napis')
         print(wyswietla.text)
         self.assertEqual(wyswietla.text, "Witaj swiecie")
+
+    def gmail(self, driver):
+        driver.find_element_by_id("znani").Click()
+        self.assertEqual()
