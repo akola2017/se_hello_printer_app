@@ -20,3 +20,8 @@ class TestFormater(unittest.TestCase):
     def gmail(self, driver):
         driver.find_element_by_id("znani").Click()
         self.assertEqual()
+
+    def sprawdzimie(self, driver):
+        wyswiet_imie = driver.find_element_by_id('imie')
+        print(wyswietl_imie.text)
+        self.assertEqual(wyswietl_imie.text, "AgnieszkaR")
