@@ -22,7 +22,7 @@ test_smoke:
 	curl -I --fail 127.0.0.1:5000
 
 test-api:
-	 python test-api/check_api.py 
+	 python test-api/check_api.py
 
 run:
 	python main.py
