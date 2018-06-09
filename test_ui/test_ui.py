@@ -26,5 +26,5 @@ class TestFormater(unittest.TestCase):
 
     def is_google_integration_works(self, driver):
         driver.find_element_by_id("znani").Click()
-        #wait = WebDriverWait(driver, 2)
-        #WebDriverWait(driver, 2).until(EC.presence_of_element_located((By.ID, "res")))
+        wait = WebDriverWait(driver, 2)
+        WebDriverWait(driver, 2).until(EC.presence_of_element_located((By.ID, "res")))
